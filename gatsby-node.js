@@ -24,11 +24,14 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
-  const blogPostTemplate = path.resolve(`src/templates/BlogPost/index.tsx`);
+  const blogPostTemplate = path.resolve(`src/templates/BlogPost/index.js`);
 
   const res = await graphql(`
     query {
-      allMarkdownRemark(filter: { frontmatter: { category: { eq: "blog" } } }) {
+      allMarkdownRemark(
+        filter: { frontmatter: { category: { eq: "blog" } } }
+        sort: { fields: frontmatter___date, order: DESC }
+      ) {
         edges {
           node {
             fields {
