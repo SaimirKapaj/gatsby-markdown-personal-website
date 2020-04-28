@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Gatsby.JS`,
-    description: `Gatsby Personal Website Starter, using Typescript, Styled Components and Tailwindcss.`,
+    description: `Gatsby Markdown Personal Website Starter, using Styled Components and Tailwindcss.`,
     author: `Saimir Kapaj`
   },
   plugins: [
@@ -43,8 +43,8 @@ module.exports = {
         name: `gatsby-personal-website-starter`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#81e6d9`,
-        theme_color: `#81e6d9`,
+        background_color: `#ed64a6`,
+        theme_color: `#ed64a6`,
         display: `minimal-ui`,
         icon: `src/assets/images/gatsby-icon.png`
       }
