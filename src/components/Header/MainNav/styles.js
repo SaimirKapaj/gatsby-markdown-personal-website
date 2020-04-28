@@ -35,7 +35,7 @@ export const ToogleMainNav = styled.button`
   outline: none !important;
 
   span {
-    ${tw`bg-indigo-500 inline-block w-6 h-px`};
+    ${tw`bg-indigo-900 inline-block w-6 h-px`};
     transition: 0.2s;
 
     &:first-child {
